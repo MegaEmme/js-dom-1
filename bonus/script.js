@@ -1,4 +1,4 @@
-console.log('Mike');
+console.log('Mike bonus');
 
 const lamp = document.getElementById('bulb');
 console.log(lamp);
