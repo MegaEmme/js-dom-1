@@ -5,14 +5,44 @@ console.log(lamp);
 
 const pressHere = document.getElementById('button');
 console.log(pressHere);
+
 pressHere.addEventListener('click',function(){
-    lamp.src="../img/yellow_lamp.png";
-    pressHere.innerText = 'Spegni';
-    pressHere.addEventListener('click',function(){
-        lamp.src="../img/white_lamp.png";
+    
+    if(lamp.classList.contains('off')){
+        lamp.classList.remove('off');
+        console.log('Acceso');
+        lamp.src="../img/yellow_lamp.png"; 
+        pressHere.innerText = 'Spegni';
+    } else { 
+        lamp.classList.add('off');
+        console.log('Spento');
+        lamp.src="../img/white_lamp.png";  
         pressHere.innerText = 'Accendi';
-    })
+    }  
+
 })
 
+
+
+
+
+
+
+
+
+
+// if (pressHere.innerText = 'Accendi'){
+//     pressHere.addEventListener('click',function(){
+//         lamp.src="../img/yellow_lamp.png";
+//         pressHere.innerText = 'Spegni';
+//     })
+// }
+
+
+
+// let lightOff = pressHere.addEventListener('click',function(){
+//     lamp.src="../img/white_lamp.png";
+//     pressHere.innerText = 'Accendi';
+// })
 
 
