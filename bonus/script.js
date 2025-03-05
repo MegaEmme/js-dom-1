@@ -9,13 +9,13 @@ console.log(pressHere);
 pressHere.addEventListener('click',function(){
     
     if(lamp.classList.contains('off')){
-        lamp.classList.remove('off');
+        lamp.classList.remove('off'); // rimuovi questa stringa in favore di classList.toggle('off') fuori dall'if;
         console.log('Acceso');
         lamp.src="../img/yellow_lamp.png"; 
         lamp.alt='Acceso';
         pressHere.innerText = 'Spegni';
     } else { 
-        lamp.classList.add('off');
+        lamp.classList.add('off'); // rimuovi questa stringa in favore di classList.toggle('off') fuori dall'if;
         console.log('Spento');
         lamp.src="../img/white_lamp.png"; 
         lamp.alt='Spento'; 
