@@ -22,6 +22,10 @@ pressHere.addEventListener('click',function(){
         pressHere.innerText = 'Accendi';
     }  
 
+    // invece di classlist.remove/add posso usare(fuori dal ciclo if):
+    // lamp.classList.toggle('off'); 
+    // che praticamente se la classe off è presente la rimuove, se non è presente la aggiunge 
+
 })
 
 
@@ -31,20 +35,5 @@ pressHere.addEventListener('click',function(){
 
 
 
-
-
-// if (pressHere.innerText = 'Accendi'){
-//     pressHere.addEventListener('click',function(){
-//         lamp.src="../img/yellow_lamp.png";
-//         pressHere.innerText = 'Spegni';
-//     })
-// }
-
-
-
-// let lightOff = pressHere.addEventListener('click',function(){
-//     lamp.src="../img/white_lamp.png";
-//     pressHere.innerText = 'Accendi';
-// })
 
 
