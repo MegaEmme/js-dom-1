@@ -12,11 +12,13 @@ pressHere.addEventListener('click',function(){
         lamp.classList.remove('off');
         console.log('Acceso');
         lamp.src="../img/yellow_lamp.png"; 
+        lamp.alt='Acceso';
         pressHere.innerText = 'Spegni';
     } else { 
         lamp.classList.add('off');
         console.log('Spento');
-        lamp.src="../img/white_lamp.png";  
+        lamp.src="../img/white_lamp.png"; 
+        lamp.alt='Spento'; 
         pressHere.innerText = 'Accendi';
     }  
 
